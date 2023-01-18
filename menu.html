@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Menu Navigasi</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+    <!-- ========== Banner ========== -->
+    <div id="banner" class="w3-container w3-center" style="background-image: url('assets/img/banner5-01.jpg'); background-repeat: no-repeat; background-size: cover; height: 200px;">
+    </div>
+
+    <!-- =========== Navbar ========== -->
+    <div id="navbar" class="w3-bar w3-padding-16 w3-text-white" style="background-color: #3196ce;">
+        <button class="w3-bar-item w3-button w3-xlarge w3-round-large transition" style="margin-left: 10%; transition: all 0.2s ease-in-out; font-weight: 700;" onclick="openMenu('zul')">Zulfi</button>
+        <div class="w3-dropdown-hover w3-right" style="margin-right: 10%;">
+            <button class="w3-button w3-large w3-round-large transition">Lainnya</button>
+            <div class="w3-dropdown-content w3-bar-block w3-round-large w3-right w3-card-2">
+                <button class="w3-button w3-large w3-bar-item w3-round-large transition w3-right"onclick="openMenu('tipe')">Tipe Komputasi Awan</button>
+                <button class="w3-button w3-large w3-bar-item w3-round-large transition"onclick="openMenu('cara-kerja')">Cara Kerja</button>
+                <button class="w3-button w3-large w3-bar-item w3-round-large transition"onclick="openMenu('keuntungan')">Keuntungan</button>
+            </div>
+        </div>
+        <button class="w3-bar-item w3-button w3-large w3-right w3-round-large transition"onclick="openMenu('about')">About Me</button>
+        <button class="w3-bar-item w3-button w3-large w3-right w3-round-large transition"onclick="openMenu('explore')">Explore</button>
+        <button class="w3-bar-item w3-button w3-large w3-right w3-round-large transition"onclick="openMenu('home')">Home</button>
+    </div>
+
+    <!-- =========== Zul Section ========== -->
+    <div id="zul" class="w3-container w3-animate-top menu w3-center w3-text-white" style="display: block; margin-top: 0; padding-top: 2%; background-image: url('assets/wave/wave-zul.svg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="w3-row w3-container">
+            <div class="w3-col s6">
+                <img src="assets/img/3d-03.webp" alt="bongo-cat-typing" width="450px" class="w3-animate-left">
+            </div>
+            <div class="w3-animate-right w3-col s5 w3-right-align">
+                <h3 class="w3-jumbo" style="font-weight: 700;">Selamat Datang</h3>
+                <p class="w3-large">Ini merupakan web tugas pertemuan ke 13 Semester 1 Mata Kuliah Pemrograman Web 1</p>
+                <button class="w3-button w3-light-blue w3-text-white w3-round-large transition" onclick="openMenu('explore')">Explore</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =========== Home Section ========== -->
+    <div id="home" class="w3-container w3-animate-top menu w3-center w3-text-white" style="display: none; background-image: url('assets/wave/wave-home.svg'); background-repeat: no-repeat; background-size: cover;">
+        <div class="w3-row w3-container w3-animate-zoom">
+            <div class="w3-col s6 w3-left-align" style="margin-left: 10%;">
+                <h3 class="w3-xxxlarge" style="font-weight: 700; margin-top: 5%;">Web apakah ini?</h3><br><br>
+                <p class="w3-xlarge w3-left-align w3-text-gray">Web ini membahas topik "Komputasi Awan"</p>
+                <button class="w3-button w3-light-blue w3-text-white w3-round-large transition"><a href="assets/PPD-10122005-Zulfi.pdf">Download pdf</a></button>
+            </div>
+            <div class="w3-col s4">
+                <img src="assets/img/3d-01.webp" alt="3d-computer" width="400px">
+            </div>
+        </div>
+    </div>
+    
+    <!-- =========== Explore Section ========== -->
+    <div id="explore" class="w3-container menu w3-animate-top" style="display: none; height: 100vh; background-image: url('assets/wave/wave-home.svg'); background-repeat: no-repeat; background-size: cover;">
+        <h3 class="w3-text-white w3-xxxlarge w3-animate-opacity" style="font-weight: 700; margin-left: 15%; margin-top: 5%;">Komputasi Awan</h3>
+
+        <div class="w3-row-padding w3-center" style="margin: 0 5%;">
+            <div class="w3-col s6 w3-animate-left">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 80%; float: right;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xxlarge" style="font-weight: 700; margin-left: 10%; margin-top: 10%;">Pengertian</h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">Komputasi Awan merupakan perkembangan dari komputasi jaringan atau komputasi nirkabel yang membutuhkan banyak kabel LAN (RJ45) yang terhubung ke setiap komputer yang ada.</p>
+                    </div>
+                    <img src="assets/img/3d-17.webp" alt="cloud computing" style="width: 100%;">
+                </div>
+            </div>
+    
+            <div class="w3-col s6 w3-animate-right">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 80%;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xxlarge" style="font-weight: 700; margin-left: 10%; margin-top: 10%;">Penggunaan</h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">Contoh Penggunaan Komputasi Awan</p>
+                        <ul style="margin: 0 10%; font-size: 20px!important">
+                            <li>Email seperti Gmail</li>
+                            <li>Storage Data seperti Google Drive</li>
+                            <li>Membuat dan mengetes aplikasi</li>
+                            <li>Menganalisis Data</li>
+                            <li>Streaming Audio dan Video</li>
+                        </ul>
+                    </div>
+                    <img src="assets/img/3d-11.webp" alt="cloud computing" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    <!-- =========== About Me Section ========== -->
+    <div id="about" class="w3-container w3-animate-top menu" style="display: none; background-image: url('assets/wave/wave-about.svg'); background-repeat: no-repeat; background-size: cover;">
+        <center>
+            <div class="w3-card-4 w3-round-xlarge w3-animate-zoom" style="width: 60%; height: 90vh; background-color: white; margin-top: 3%;">
+                <img src="assets/img/bg2.webp" alt="foto profil" style="width: 100%; height: 300px; object-fit: cover; border-radius: 16px 16px 0 0;">
+                <div class="w3-display-container w3-container">
+                    <div class="w3-display-middle" style="width: 300px; margin-top: 10%;">
+                        <img src="assets/img/zulfi.jpg" alt="foto profil" width="80%" class="w3-circle" style="border: 5px solid white; margin-top: 2%;">
+                        <p style="font-size: x-large; margin-bottom: 0;"><strong>Zulfi Fadilah Azhar</strong></p>
+                        <p style="margin: 0; color: rgb(120, 120, 120);">NIM: 10122005 (IF-1)</p>
+                        <p style="margin: 0 0 5px 0; color: rgb(120, 120, 120);">Universitas Komputer  Indonesia</p>
+                        <a href="https://www.google.com/maps/place/Universitas+Komputer+Indonesia/@-6.8889326,107.6149587,16.74z/data=!4m5!3m4!1s0x2e68e6f8aa08188b:0x632d24e6061e8903!8m2!3d-6.887056!4d107.6154746" target="_blank" style="color: #0a66c2; text-decoration: none; font-weight: bold; " onMouseOver="this.style.color='#004284'" onMouseOut="this.style.color='#0a66c2'">View Map</a><br><br>
+                        <a href="https://www.instagram.com/zulfifazhar._" target="_blank"><i class="bi bi-instagram w3-xlarge w3-padding-small"></i></a>
+                        <a href="https://www.linkedin.com/in/zulfi-fadilah-azhar-2584a31b3" target="_blank"><i class="bi bi-linkedin w3-xlarge w3-padding-small"></i></a>
+                        <a href="https://web.facebook.com/zulfi.fadilah.7/" target="_blank"><i class="bi bi-facebook w3-xlarge w3-padding-small"></i></a>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </div>
+
+    <!-- ========== Lainnya ========== -->
+    <div id="tipe" class="w3-container menu w3-animate-top" style="display:none; background-image: url('assets/wave/wave-home.svg'); background-repeat: no-repeat; background-size: cover;">
+        <h3 class="w3-text-white w3-xxxlarge w3-animate-opacity" style="font-weight: 700; margin-left: 17%; margin-top: 5%;">Tipe Komputasi Awan</h3>
+        <p class="w3-text-white w3-large w3-animate-opacity" style="font-weight: 500; margin-left: 17%; max-width: 70ch;">Cloud computing merupakan sebuah sistem yang utamanya terdiri dari tiga layanan: software-as-a-service (SaaS), infrastructure-as-a-service (IaaS), dan platform-as-a-service (PaaS).</p>
+        
+        <div class="w3-row-padding w3-center" style="margin: 0 5%;">
+            <div class="w3-col s6 w3-animate-left">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%; float: right;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Software-as-a-service <strong>(SaaS)</strong></h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">melibatkan suatu lisensi aplikasi perangkat lunak kepada penggunanya. Lisensi ini biasanya diberikan melalui metode pay-as-you-go atau on-demand. Tipe seperti ini bisa ditemukan di Microsoft Office’s 365.</p>
+                    </div>
+                    <img src="assets/img/3d-10.webp" alt="cloud computing" style="width: 100%;">
+                </div>
+            </div>
+    
+            <div class="w3-col s6 w3-animate-right" style="transform: translateY(120px);">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Infrastructure-as-a-service <strong>(IaaS)</strong></h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">melibatkan metode untuk mengirimkan suatu file dari sistem operasi ke server dan penyimpanan, melalui konektivitas berbasis IP sebagai bagian dari layanan on-demand. Klien jadi tidak perlu membeli perangkat lunak atau server. Contoh populer dari tipe ini adalah Public Cloud dari Indonesian Cloud dan Microsoft Azure.</p>
+                    </div>
+                    <img src="assets/img/3d-13.webp" alt="cloud computing" style="width: 90%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center" style="margin: 0 5%; transform: translateY(-50px);">
+            <div class="w3-col s6 w3-animate-bottom">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%; float: right;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Platform-as-a-service <strong>(PaaS)</strong></h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">PaaS hampir mirip dengan SaaS, tapi perbedaan paling besarnya adalah, alih-alih mengirim suatu perangkat lunak via online, PaaS sebenarnya adalah platform untuk membuat perangkat lunak yang dikirimkan melalui internet. Contoh dari PaaS seperti Salesforce.com dan Heroku.</p>
+                    </div>
+                    <img src="assets/img/3d-06.webp" alt="cloud computing" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cara-kerja" class="w3-container menu w3-animate-top" style="display:none; background-image: url('assets/wave/wave-home.svg'); background-repeat: no-repeat; background-size: cover;">
+        <h3 class="w3-text-white w3-xxxlarge w3-animate-opacity" style="font-weight: 700; margin-left: 24%; transform: translateY(100px);">Cara Kerja</h3>
+
+        <div class="w3-row-padding w3-center" style="margin: 0 5%;">
+            <div class="w3-col s6 w3-animate-left" style="transform: translateY(150px);">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%; float: right;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Kedua</h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">Sumber daya yang dikumpulkan ini diatur agar bisa fleksibel, sehingga para penggunanya bisa mengakses lebih banyak ruang penyimpanan jika diperlukan. Demikian pula dengan sumber daya yang sedang tidak digunakan, ini akan dilepas kembali ke cloud jika memang sudah tidak lagi dibutuhkan.</p>
+                    </div>
+                    <img src="assets/img/3d-16.webp" alt="cloud computing" style="width: 100%;">
+                </div>
+            </div>
+    
+            <div class="w3-col s6 w3-animate-right">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Pertama</h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">Setiap varian cloud computing memiliki dua faktor yang sama secara umum, yakni data center yang berada di luar dan harus memiliki internet untuk mengaksesnya. Sumber daya server dalam data center ini dikumpulkan untuk membuat platform yang sangat besar agar siap menampung layanan virtual.</p>
+                    </div>
+                    <img src="assets/img/3d-08.webp" alt="cloud computing" style="width: 90%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center" style="margin: 0 5%;">
+            <div class="w3-col s6 w3-right w3-animate-zoom" style="transform: translateY(-30px);">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%; float: left;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Ketiga</h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">Penggunaan sumber daya berbasis on-demand ini menawarkan skalabilitas dan fleksibilitas yang hampir tidak terbatas. Pasalnya, kebutuhan Anda akan cloud computing senantiasa berubah atau dinamis.</p>
+                    </div>
+                    <img src="assets/img/3d-04.webp" alt="cloud computing" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="keuntungan" class="w3-container menu w3-animate-top" style="display:none; background-image: url('assets/wave/wave-home.svg'); background-repeat: no-repeat; background-size: cover;">
+        <h3 class="w3-text-white w3-xxxlarge w3-animate-opacity" style="font-weight: 700; margin-left: 17%; margin-top: 5%;">Keuntungan</h3>
+        <p class="w3-text-white w3-large w3-animate-opacity" style="font-weight: 500; margin-left: 17%; max-width: 70ch;">Cloud computing bukan sekadar bisa mengakses file secara remote. Berkat cloud computing, penggunanya dapat mengecek email di komputer mana pun, atau bahkan menyimpan serta mengakses file dari mana pun seperti Dropbox atau Google Drive.</p>
+        
+        <div class="w3-row-padding w3-center" style="margin: 0 5%;">
+            <div class="w3-col s6 w3-animate-left">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%; float: right;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Pertama</h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">Sebelum adanya cloud, perusahaan harus membeli, memiliki, membangun manajemen informasi teknologi (IT) mereka sendiri. Sebaliknya, dengan adanya cloud, perusahaan hanya membutuhkan pusat server dan divisi IT agar memastikan internet yang dimiliki cepat dan stabil, agar karyawannya bisa berinteraksi dengan cloud secara online.</p>
+                    </div>
+                    <img src="assets/img/3d-12.webp" alt="cloud computing" style="width: 100%;">
+                </div>
+            </div>
+    
+            <div class="w3-col s6 w3-animate-right">
+                <div class="w3-card-4 w3-light-gray w3-hover-dark-gray w3-round-xlarge transition" style="width: 75%;">
+                    <div class="w3-container w3-left-align">
+                        <h1 class="w3-xlarge" style="font-weight: 700; margin-left: 10%; margin-right: 10%; margin-top: 10%;">Kedua</h1>
+                        <p style="margin: 0 10%; font-size: 20px!important">Cloud membuat para karyawan bisa menghemat ruang penyimpanan di laptop atau komputer. Saat ada perangkat lunak atau program yang membutuhkan update, tinggal download saja tanpa menggunakan cara tradisional seperti menggunakan disc atau flash drive.
+                        <br><br>
+                        Contohnya Adobe, penggunanya bisa mengakses aplikasi melalui Cretive Cloud dengan model subscription. Ini memungkinkan penggunanya mengunduh versi terbaru dan memperbaiki program lebih mudah.</p>
+                    </div>
+                    <img src="assets/img/3d-14.webp" alt="cloud computing" style="width: 90%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =========== Script ========== -->
+    <script>
+        function openMenu(namaMenu) {
+            var i;
+            var x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+            }
+            document.getElementById(namaMenu).style.display = "block"; 
+        }
+        </script>
+</body>
+</html>
